@@ -2,20 +2,24 @@ alert("Bienvenido a los premios Martin fierro - Actores");
 
 alert("A continuación les diré los nominados a mejor actor protagónico de novela")
 
-console.log("Los nominados son:");
+
 
 
 
 
 function nominados() {
-    alert("Los nominados son:" + nominados);
+    console.log(("Los nominados son:" + nominados));
     let ganador = prompt("Quién de los tres piensa que fue el ganador:");
-    adivinaganador(ganador);
+    adivinaganador(ganador)
+
+    
 }
 
-function adivinaganador(ganador){
-    if(ganador === "Oscar Ferreiro"){
+function adivinaganador(nombre , apellido){
+    if(nombre === "Oscar" && apellido === "Ferreiro"){
         alert("Adivinaste! fue el ganador a mejor actor protagónico");
+        
+        adivinaganador()
     }
         
         else{
@@ -24,12 +28,10 @@ function adivinaganador(ganador){
 
     }
 
- 
+nominados()
  
 
-nominados("Oscar Ferreiro");
-nominados("Joaquín Furriel");
-nominados("Pablo Echarri");
+
 
 
 /*   return nominados;
