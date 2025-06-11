@@ -7,28 +7,37 @@ alert("A continuación les diré los nominados a mejor actor protagónico de nov
 
 
 
-function nominados() {
-    console.log(("Los nominados son:" + nominados));
-    let ganador = prompt("Quién de los tres piensa que fue el ganador:");
-    adivinaganador(ganador)
-
-    
+function nominados(nombre) {
+    console.log("Los nominados son: " + nombre.join(" , "));
 }
 
-function adivinaganador(nombre , apellido){
-    if(nombre === "Oscar" && apellido === "Ferreiro"){
-        alert("Adivinaste! fue el ganador a mejor actor protagónico");
-        
-        adivinaganador()
+nominados(["Oscar Ferreiro", "Joaquín Furriel", "Pablo Echarri"]);
+
+
+let respuesta = "";
+while (respuesta !== "oscar ferreiro") {
+    respuesta = prompt("Quién de los tres piensa que fue el ganador:");
+
+
+
+    if(respuesta === "oscar ferreiro") {
+        break;
+       
+    alert("Adivinaste! fue el ganador a mejor actor protagónico.");
+
     }
-        
-        else{
-            alert("No fue el ganador. Intente nuevamente");
-        }
+        else {
+            alert("No fue el ganador. Intente nuevamente")
+            continue;
 
     }
 
-nominados()
+}
+
+
+
+
+
  
 
 
