@@ -25,14 +25,13 @@ while (respuesta !== "oscar ferreiro") {
        
         alert("Adivinaste! fue el ganador a mejor actor protagónico.");
 
-    }   else if (respuesta === "oscar" && respuesta != "ferreiro");{
-
-    
-            alert("No es correcto el apellido");
-            continue;
-    }   else {
-            alert("No fue el ganador. Intente nuevamente")
-            continue;
+    }  else if (respuesta === "oscar" && respuesta != "ferreiro"); {
+        
+        alert("No es correcto el apellido. Intente nuevamente");
+            
+    }  else (respuesta !== "oscar" && respuesta !== "ferreiro"); {
+        alert("No fue el ganador. Intente nuevamente")
+        continue;
 
     }
 
