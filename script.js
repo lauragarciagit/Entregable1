@@ -6,8 +6,9 @@ alert("A continuación les diré los nominados a mejor actor protagónico de nov
 
 
 
+
 function nominados(nombre) {
-console.log("Los nominados son: " + nombre.join(" , "));
+    console.log("Los nominados son: " + nombre.join(" , "));
 }
 nominados(["Oscar Ferreiro", "Joaquín Furriel", "Pablo Echarri"]);
 
