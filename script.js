@@ -8,14 +8,14 @@ alert("A continuación les diré los nominados a mejor actor protagónico de nov
 
 
 function nominados(nombre) {
-    console.log("Los nominados son: " + nombre.join(" , "));
+console.log("Los nominados son: " + nombre.join(" , "));
 }
 nominados(["Oscar Ferreiro", "Joaquín Furriel", "Pablo Echarri"]);
 
 
 let respuesta = "";
 
-
+/*aca voy a agregar una funcion para validar sin importar case sensitive*/
 while (respuesta !== "oscar ferreiro") {
     respuesta = prompt("Quién de los tres piensa que fue el ganador");
     
