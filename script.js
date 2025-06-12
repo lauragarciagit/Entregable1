@@ -15,14 +15,17 @@ nominados(["Oscar Ferreiro", "Joaquín Furriel", "Pablo Echarri"]);
 
 
 let respuesta = "";
+
+
 while (respuesta !== "oscar ferreiro") {
-    respuesta = prompt("Quién de los tres piensa que fue el ganador:"); 
+    respuesta = prompt("Quién de los tres piensa que fue el ganador");
+    
 
 
 
     if(respuesta === "oscar ferreiro") {
         alert("Adivinaste! fue el ganador a mejor actor protagónico.");
-
+    
     }  else if (respuesta === "oscar") {
         
         alert("Falta el apellido. Intente nuevamente");
