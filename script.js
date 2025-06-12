@@ -2,9 +2,7 @@ alert("Bienvenido a los premios Martin fierro - Actores");
 
 alert("A continuación les diré los nominados a mejor actor protagónico de novela")
 
-
-
-
+nominados(["Oscar Ferreiro", "Joaquín Furriel", "Pablo Echarri"]);
 
 
 function nominados(nombre) {
@@ -33,11 +31,13 @@ while (respuesta !== "oscar ferreiro") {
     }  else {
         
         alert("No fue el ganador. Intente nuevamente");
-       
 
-    }
+    }    
+    
 
 }
+
+
 
 
 
