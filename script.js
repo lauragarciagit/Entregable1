@@ -23,7 +23,7 @@ while (respuesta !== "oscar ferreiro") {
     if(respuesta === "oscar ferreiro") {
         alert("Adivinaste! fue el ganador a mejor actor protagónico.");
 
-    }  else if (respuesta === "oscar"); {
+    }  else if (respuesta === "oscar") {
         
         alert("Falta el apellido. Intente nuevamente");
             
